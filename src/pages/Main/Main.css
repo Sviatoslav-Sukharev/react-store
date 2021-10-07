@@ -1,0 +1,13 @@
+.Main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Main__text {
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+}

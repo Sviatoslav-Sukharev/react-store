@@ -1,0 +1,17 @@
+.Cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Cart__text {
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.Cart__text_large {
+  font-size: 60px;
+}

@@ -1,0 +1,54 @@
+.LastFavouritesItem {
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+}
+
+.LastFavouritesItem__btn {
+  transition: background 0.1s ease-in-out;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 35px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.LastFavouritesItem__btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.LastFavouritesItem__logo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: url("https://img.icons8.com/material-outlined/96/000000/shopping-cart--v1.png") 50%/100%;
+}
+
+.LastFavouritesItem__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 1px;
+  right: -1px;
+}
+
+.LastFavouritesItem__logo.empty::after {
+  background: rgba(255, 74, 74, 0);
+  transition: background 0.1s ease-in-out;
+}
+
+.LastFavouritesItem__logo.not-empty::after {
+  background: rgb(255, 74, 74);
+  transition: background 0.1s ease-in-out;
+}

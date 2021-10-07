@@ -1,0 +1,17 @@
+.Favourites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Favourites__text {
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.Favourites__text_large {
+  font-size: 60px;
+}

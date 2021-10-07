@@ -1,0 +1,57 @@
+.SliderCard {
+  padding: 0px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.SliderCard__btn {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  transition: background 0.1s ease-in-out;
+  user-select: none;
+}
+
+.SliderCard__btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.SliderCard__card {
+  flex: 1 0 auto;
+  padding: 0px 5px;
+}
+
+.SliderCard__text {
+  font-size: 32px;
+  text-align: center;
+  user-select: none;
+}
+
+.blue {
+  color: blue;
+  font-weight: 600;
+}
+
+.orange {
+  color: orangered;
+  font-weight: 600;
+}
+
+.grey {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.green {
+  color: rgb(14, 173, 0);
+  font-weight: 600;
+}

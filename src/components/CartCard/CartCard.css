@@ -1,0 +1,49 @@
+.CartCard {
+  margin: 10px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s ease-in-out;
+}
+
+.CartCard:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.CartCard__title {
+  font-size: 60px;
+  user-select: none;
+}
+
+.CartCard__logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url("https://img.icons8.com/material-outlined/96/000000/shopping-cart--v1.png") 50%/100%;
+}
+
+.CartCard__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 3px;
+  right: 0px;
+}
+
+.CartCard__logo.empty::after {
+  background: rgba(255, 74, 74, 0);
+  transition: background 0.1s ease-in-out;
+}
+
+.CartCard__logo.not-empty::after {
+  background: rgb(255, 74, 74);
+  transition: background 0.1s ease-in-out;
+}

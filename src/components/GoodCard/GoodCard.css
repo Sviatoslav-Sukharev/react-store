@@ -1,0 +1,104 @@
+.GoodCard {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.GoodCard__img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.GoodCard__container {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.GoodCard__info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.GoodCard__btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 15px 15px;
+}
+
+.GoodCard__btn {
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  user-select: none;
+  transition: background 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.GoodCard__btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.GoodCard__price {
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: rgba(247, 187, 49, 0.8);
+  border-radius: 15px;
+  padding: 10px;
+  user-select: none;
+}
+
+.GoodCard__title {
+  font-size: 35px;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.GoodCard__logo {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: url("https://img.icons8.com/material-outlined/96/000000/shopping-cart--v1.png") 50%/100%;
+}
+
+.GoodCard__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 1px;
+  right: 0px;
+}
+
+.GoodCard__btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 17px;
+  right: 7px;
+}
+
+.GoodCard__logo.empty::after, .GoodCard__btn.empty::after {
+  background: rgba(255, 74, 74, 0);
+  transition: background 0.1s ease-in-out;
+}
+
+.GoodCard__logo.not-empty::after, .GoodCard__btn.not-empty::after {
+  background: rgb(255, 74, 74);
+  transition: background 0.1s ease-in-out;
+}
+

@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router';
+import Favourites from './pages/Favourites/Favourites';
+import Main from './pages/Main/Main';
+import Cart from './pages/Cart/Cart';
+import GoodsState from './context/GoodsContext/GoodsState';
+import CartState from './context/CartContext/CartState';
+import FavouritesState from "./context/FavouritesContext/FavouritesState";
 
-function App() {
+const App = props => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FavouritesState>
+      <CartState>
+        <GoodsState>
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/favourites" component={Favourites} />
+            <Route path="/cart" component={Cart} />
+          </Switch>
+        </GoodsState>
+      </CartState>
+    </FavouritesState>
   );
 }
 

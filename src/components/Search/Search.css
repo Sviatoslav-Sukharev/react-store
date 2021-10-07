@@ -1,0 +1,21 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Search__input {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  transition: background 0.1s ease-in-out;
+}
+
+.Search__input:focus {
+  transition: background 0.1s ease-in-out;
+  background: rgba(0, 0, 0, 0.2);
+}
